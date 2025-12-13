@@ -1,0 +1,199 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #e5e7eb;
+  background-color: #020617;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-root {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1f2937 0, #020617 55%);
+  color: #e5e7eb;
+}
+
+.app-header {
+  padding: 1.5rem 2rem 1rem;
+  border-bottom: 1px solid #111827;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.app-header p {
+  margin: 0.25rem 0 0;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.app-main {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 0 1rem 2rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #1f2937;
+  background: #020617;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tab-btn.active {
+  background: #22c55e;
+  color: #020617;
+  border-color: #22c55e;
+  font-weight: 600;
+}
+
+.tab-content {
+  margin-top: 0.5rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.tool-card {
+  background: #020617;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  padding: 1rem;
+}
+
+.tool-card h2,
+.tool-card h3 {
+  margin-top: 0;
+}
+
+.dropzone {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px dashed #4b5563;
+  text-align: center;
+  cursor: pointer;
+  background: #020617;
+}
+
+.dropzone-hint {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.primary-btn,
+.secondary-btn {
+  margin-top: 0.75rem;
+  padding: 0.55rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #22c55e;
+  color: #020617;
+  width: 100%;
+}
+
+.secondary-btn {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.primary-btn:disabled,
+.secondary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.inline-fields {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.inline-fields label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.inline-fields input,
+.tool-card input,
+.tool-card select,
+.tool-card textarea {
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.button-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.text-result {
+  margin-top: 0.75rem;
+}
+
+.error-text {
+  color: #fecaca;
+  background: #7f1d1d;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.info-text {
+  color: #c4b5fd;
+  font-size: 0.85rem;
+}
+
+.small-text {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #111827;
+  margin: 0.75rem 0;
+}
+
+.info-box {
+  margin-top: 0.75rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid #1f2937;
+  background: #020617;
+}
