@@ -3,6 +3,8 @@
 export const API_BASE =
   import.meta.env.VITE_API_BASE || "http://localhost:8080"; // gateway base
 
+console.log("API_BASE:", API_BASE);
+
 async function postMultipart(path, formData) {
   const res = await fetch(`${API_BASE}${path}`, {
     method: "POST",
@@ -80,3 +82,4 @@ export async function apiFileInfo(file) {
   const res = await postMultipart("/api/file/info", form);
   return res.json();
 }
+
